@@ -1,0 +1,11 @@
+- name: Demonstrate writing a simple ansible play
+  hosts: all
+  tasks:
+    - name: Ping the container
+      ping:
+
+- name: Display the config
+  hosts: uat
+  tasks:
+    - name: Display hostname and OS
+      shell: echo "Hi! Tower is working."
